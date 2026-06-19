@@ -20,14 +20,18 @@ jobs:
 
       - name: Instalar dependencias
         run: |
+          cd ENTREGA_F
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Ejecutar pruebas
-        run: pytest tests/
+        run: |
+          cd ENTREGA_F
+          pytest tests/
 
       - name: Guardar reporte como artefacto
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: reporte-pytest-html
-          path: report.html
+          path: ENTREGA_F/report.html
