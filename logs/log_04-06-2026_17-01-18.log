@@ -1,0 +1,57 @@
+2026-06-04 17:01:18,872 INFO root - --- CREADO: Iniciando prueba de API - Login Válido ---
+2026-06-04 17:01:18,873 INFO root - Enviando petición POST a /api/login con credenciales válidas...
+2026-06-04 17:01:19,705 INFO root - Respuesta recibida. Status Code: 200
+2026-06-04 17:01:19,705 INFO root - FINALIZADO: Login válido en API aprobado correctamente.
+2026-06-04 17:01:19,713 INFO root - --- CREADO: Iniciando prueba de API - Login Sin Password ---
+2026-06-04 17:01:19,713 INFO root - Enviando petición POST a /api/login sin el campo password...
+2026-06-04 17:01:20,933 INFO root - Respuesta recibida. Status Code: 400
+2026-06-04 17:01:20,933 INFO root - FINALIZADO: Error 'Missing password' validado con éxito.
+2026-06-04 17:01:20,945 INFO root - --- CREADO: Iniciando prueba de API - Login Sin Email ---
+2026-06-04 17:01:20,945 INFO root - Enviando petición POST a /api/login sin el campo email...
+2026-06-04 17:01:21,853 INFO root - Respuesta recibida. Status Code: 400
+2026-06-04 17:01:21,854 INFO root - FINALIZADO: Error 'Missing email or username' validado con éxito.
+2026-06-04 17:01:21,858 INFO root - --- CREADO: Iniciando prueba de API - Crear Usuario ---
+2026-06-04 17:01:21,858 INFO root - Enviando petición POST a /api/users para crear a Claudia...
+2026-06-04 17:01:22,776 INFO root - Respuesta recibida. Status Code: 201 en 0.916805 seg.
+2026-06-04 17:01:22,776 INFO root - FINALIZADO: Usuario creado de forma exitosa y validaciones conformes.
+2026-06-04 17:01:22,782 INFO root - --- CREADO: Iniciando prueba de API - Eliminar Usuario ---
+2026-06-04 17:01:22,782 INFO root - Enviando petición DELETE a /api/users/2...
+2026-06-04 17:01:23,698 INFO root - Respuesta recibida. Status Code: 204
+2026-06-04 17:01:23,698 INFO root - FINALIZADO: Eliminación de usuario validada correctamente.
+2026-06-04 17:01:23,705 INFO root - --- CREADO: Iniciando prueba de API - Obtener Usuario ---
+2026-06-04 17:01:23,705 INFO root - Enviando petición GET a /api/users/2...
+2026-06-04 17:01:24,927 INFO root - Respuesta recibida. Status Code: 200 en 1.218415 seg.
+2026-06-04 17:01:29,627 INFO root - --- CREADO: Iniciando prueba de Agregar Producto al Carrito ---
+2026-06-04 17:01:29,627 INFO root - Intentando agregar el primer producto al carrito...
+2026-06-04 17:01:29,771 INFO root - Validando el estado del contador del carrito...
+2026-06-04 17:01:29,805 INFO root - Contador del carrito detectado: '1'
+2026-06-04 17:01:29,805 INFO root - FINALIZADO: Producto agregado y contador validado con éxito.
+2026-06-04 17:01:32,862 INFO root - --- FIXTURE: Iniciando login automático para pruebas de Inventario ---
+2026-06-04 17:01:32,862 INFO root - Logueando de fondo con usuario: standard_user
+2026-06-04 17:01:33,895 INFO root - FIXTURE: Login automático exitoso. Retornando InventoryPage.
+2026-06-04 17:01:33,895 INFO root - --- CREADO: Iniciando prueba de Título de la Página ---
+2026-06-04 17:01:33,903 INFO root - Título capturado del navegador: 'Swag Labs'
+2026-06-04 17:01:33,904 INFO root - FINALIZADO: Título de la página validado con éxito.
+2026-06-04 17:01:36,933 INFO root - --- FIXTURE: Iniciando login automático para pruebas de Inventario ---
+2026-06-04 17:01:36,933 INFO root - Logueando de fondo con usuario: standard_user
+2026-06-04 17:01:38,148 INFO root - FIXTURE: Login automático exitoso. Retornando InventoryPage.
+2026-06-04 17:01:38,149 INFO root - --- CREADO: Iniciando prueba de Cantidad de Productos Visibles ---
+2026-06-04 17:01:38,168 INFO root - Cantidad de productos detectados en pantalla: 6
+2026-06-04 17:01:38,168 INFO root - FINALIZADO: Presencia y cantidad exacta de 6 productos validada con éxito.
+2026-06-04 17:01:41,244 INFO root - --- FIXTURE: Iniciando login automático para pruebas de Inventario ---
+2026-06-04 17:01:41,244 INFO root - Logueando de fondo con usuario: standard_user
+2026-06-04 17:01:42,517 INFO root - FIXTURE: Login automático exitoso. Retornando InventoryPage.
+2026-06-04 17:01:42,519 INFO root - --- CREADO: Iniciando prueba de Elementos de Interfaz Gráfica ---
+2026-06-04 17:01:42,760 INFO root - Verificación de visibilidad del menú lateral: True
+2026-06-04 17:01:42,800 INFO root - Verificación de visibilidad del filtro: True
+2026-06-04 17:01:42,801 INFO root - FINALIZADO: Menú lateral y filtro de ordenamiento validados con éxito.
+2026-06-04 17:01:46,014 INFO root - --- CREADO: Iniciando prueba de Login Exitoso ---
+2026-06-04 17:01:46,014 INFO root - Intentando loguear con el usuario: standard_user
+2026-06-04 17:01:48,038 INFO root - URL alcanzada tras el login: https://www.saucedemo.com/inventory.html
+2026-06-04 17:01:48,038 INFO root - FINALIZADO: Redirección al inventario validada con éxito.
+2026-06-04 17:01:51,204 INFO root - --- CREADO: Iniciando prueba de Login con Password Inválido ---
+2026-06-04 17:01:51,204 INFO root - Intentando loguear usuario standard_user con clave incorrecta.
+2026-06-04 17:01:52,172 INFO root - FINALIZADO: Mensaje de error por password inválido capturado correctamente.
+2026-06-04 17:01:55,341 INFO root - --- CREADO: Iniciando prueba de simulación de error para evidencia ---
+2026-06-04 17:01:55,342 INFO root - Navegando a la página de inicio de SauceDemo...
+2026-06-04 17:01:55,952 WARNING root - Ejecutando falla intencional para forzar la captura en el reporte...

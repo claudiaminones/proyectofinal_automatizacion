@@ -1,0 +1,10 @@
+2026-06-03 21:15:22,613 INFO root - --- CREADO: Iniciando prueba de Login Exitoso ---
+2026-06-03 21:15:22,613 INFO root - Intentando loguear con el usuario: standard_user
+2026-06-03 21:15:23,353 INFO root - URL alcanzada tras el login: https://www.saucedemo.com/inventory.html
+2026-06-03 21:15:23,353 INFO root - FINALIZADO: Redirección al inventario validada con éxito.
+2026-06-03 21:15:26,313 INFO root - --- CREADO: Iniciando prueba de Login con Password Inválido ---
+2026-06-03 21:15:26,313 INFO root - Intentando loguear usuario standard_user con clave incorrecta.
+2026-06-03 21:15:26,988 INFO root - FINALIZADO: Mensaje de error por password inválido capturado correctamente.
+2026-06-03 21:15:29,969 INFO root - --- CREADO: Iniciando prueba de simulación de error para evidencia ---
+2026-06-03 21:15:29,969 INFO root - Navegando a la página de inicio de SauceDemo...
+2026-06-03 21:15:30,322 WARNING root - Ejecutando falla intencional para forzar la captura en el reporte...

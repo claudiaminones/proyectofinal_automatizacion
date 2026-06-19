@@ -1,0 +1,14 @@
+{
+  "usuario_valido": {
+    "usuario": "standard_user",
+    "clave": "secret_sauce"
+  },
+  "usuario_invalido": {
+    "usuario": "standard_user",
+    "clave": "123456"
+  },
+  "usuario_bloqueado": {
+    "usuario": "locked_out_user",
+    "clave": "secret_sauce"
+  }
+}
