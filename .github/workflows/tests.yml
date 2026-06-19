@@ -25,7 +25,8 @@ jobs:
 
       - name: Ejecutar pruebas
         run: |
-          pytest tests/ --html=report.html || true
+          # Buscamos recursivamente cualquier archivo que empiece con test_
+          python -m pytest -v --html=report.html || true
 
       - name: Guardar reporte como artefacto
         if: always()
