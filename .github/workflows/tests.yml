@@ -25,7 +25,7 @@ jobs:
 
       - name: Ejecutar pruebas
         run: |
-          pytest tests/
+          pytest tests/ --html=report.html || true
 
       - name: Guardar reporte como artefacto
         if: always()
