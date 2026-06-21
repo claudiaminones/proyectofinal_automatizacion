@@ -23,7 +23,7 @@ def driver():
 
 @pytest.fixture
 def login_in_driver(driver):
-    """La fixture que necesita  test_carrito.py para arrancar logueado desde el JSON"""
+    
     login_page = LoginPage(driver)
     
     # Recupera las credenciales válidas estructuradas en el archivo de datos JSON
@@ -51,7 +51,7 @@ def pytest_runtest_makereport(item, call):
             nombre_foto = f"evidencias/{item.name}_FALLO_{timestamp}.png"
             driver.save_screenshot(nombre_foto)
             
-            # 2. Guardamos el Base64 temporalmente dentro del objeto para usarlo en la tabla
+            
             rep.screenshot_base64 = driver.get_screenshot_as_base64()
 
 

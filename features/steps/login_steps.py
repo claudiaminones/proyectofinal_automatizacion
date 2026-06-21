@@ -15,7 +15,7 @@ def step_ingresar_credenciales(context, usuario, contraseña):
 
 @then('el sistema lo redirige a la pantalla de inventario')
 def step_verificar_home(context):
-    # Tu validación de que entramos a la app
+    # Valido que entré en la app
     assert "inventory.html" in context.browser.current_url
 
 @then('se muestra el mensaje de error "{mensaje}"')
